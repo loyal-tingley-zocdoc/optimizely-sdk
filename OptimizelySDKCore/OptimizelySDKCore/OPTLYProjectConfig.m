@@ -149,6 +149,14 @@ NSString * const kExpectedDatafileVersion  = @"3";
     }];
 }
 
+- (nullable instancetype)initWithDictionary:(NSDictionary *)dictionary error:(NSError **)error {
+    NSMutableDictionary *overrides = [@{@"anonymizeIP": @YES} mutableCopy];
+
+    [overrides addEntriesFromDictionary:dictionary];
+
+    return [super initWithDictionary:overrides error:error];
+}
+
 #pragma mark -- Getters --
 - (OPTLYAudience *)getAudienceForId:(NSString *)audienceId
 {
