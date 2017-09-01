@@ -22,5 +22,5 @@ Pod::Spec.new do |s|
   end
   s.dependency 'OptimizelySDKEventDispatcher', '~> 1.3.0'
   s.dependency 'OptimizelySDKUserProfileService', '~> 1.3.0'
-  s.dependency 'OptimizelySDKDatafileManager', '~> 1.3.0'
+  s.dependency 'OptimizelySDKDatafileManager', '~> 1.3.1'
 end
