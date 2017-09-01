@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target  = "9.0"
   s.source                  = {
     :git => "https://github.com/loyal-tingley-zocdoc/optimizely-sdk.git",
-    :tag => "userProfileService-"+s.version.to_s
+    :tag => s.version.to_s
   }
   s.source_files            = "OptimizelySDKUserProfileService/OptimizelySDKUserProfileService/*.{h,m}"
   s.public_header_files     = "OptimizelySDKUserProfileService/OptimizelySDKUserProfileService/*.h"
@@ -21,5 +21,5 @@ Pod::Spec.new do |s|
       ss.dependency 'JSONModel', '= 1.3.0'
       ss.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/JSONModel" }
   end
-  s.dependency 'OptimizelySDKShared', '1.3.0'
+  s.dependency 'OptimizelySDKShared', '~> 1.3.0'
 end

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                    = "OptimizelySDKCore"
-  s.version                 = "1.3.0"
+  s.version                 = "1.3.1"
   s.summary                 = "Optimizely server-side testing core framework."
   s.homepage                = "http://developers.optimizely.com/server/reference/index.html?language=objectivec"
   s.license                 = { :type => "Apache License, Version 2.0", :file => "LICENSE" }
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target  = "9.0"
   s.source                  = {
     :git => "https://github.com/loyal-tingley-zocdoc/optimizely-sdk.git",
-    :tag => "core-"+s.version.to_s
+    :tag => s.version.to_s
   }
   s.source_files            = "OptimizelySDKCore/OptimizelySDKCore/*.{h,m}",  "OptimizelySDKCore/Frameworks/**/*.{c,h,m}"
   s.public_header_files     = "OptimizelySDKCore/OptimizelySDKCore/*.h"

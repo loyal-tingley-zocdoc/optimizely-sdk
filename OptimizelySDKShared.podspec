@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target  = "9.0"
   s.source                  = {
     :git => "https://github.com/loyal-tingley-zocdoc/optimizely-sdk.git",
-    :tag => "shared-"+s.version.to_s
+    :tag => s.version.to_s
   }
   s.source_files            = "OptimizelySDKShared/OptimizelySDKShared/*.{h,m}"
   s.tvos.exclude_files      = "OptimizelySDKShared/OptimizelySDKShared/OPTLYDatabase.{h,m}",\
@@ -20,6 +20,6 @@ Pod::Spec.new do |s|
   s.requires_arc            = true
   s.xcconfig                = { 'GCC_PREPROCESSOR_DEFINITIONS' => "OPTIMIZELY_SDK_SHARED_VERSION=@\\\"#{s.version}\\\"" }
   s.dependency 'JSONModel', '1.3.0'
-  s.dependency 'OptimizelySDKCore', '1.3.0'
+  s.dependency 'OptimizelySDKCore', '~> 1.3.0'
   s.ios.dependency 'FMDB', '2.6.2'
 end
