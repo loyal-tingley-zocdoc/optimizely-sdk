@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                    = "OptimizelySDKUserProfileService"
-  s.version                 = "1.3.0"
+  s.version                 = "1.3.1"
   s.summary                 = "Optimizely server-side testing user profile framework."
   s.homepage                = "http://developers.optimizely.com/server/reference/index.html?language=objectivec"
   s.license                 = { :type => "Apache License, Version 2.0", :file => "LICENSE" }
