@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target  = "9.0"
   s.source                  = {
     :git => "https://github.com/loyal-tingley-zocdoc/optimizely-sdk.git",
-    :tag => s.version.to_s
+    :tag => "shared-"+s.version.to_s
   }
   s.source_files            = "OptimizelySDKShared/OptimizelySDKShared/*.{h,m}"
   s.tvos.exclude_files      = "OptimizelySDKShared/OptimizelySDKShared/OPTLYDatabase.{h,m}",\

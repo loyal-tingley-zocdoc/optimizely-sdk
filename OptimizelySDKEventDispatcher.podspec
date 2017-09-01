@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target  = "9.0"
   s.source                  = {
     :git => "https://github.com/loyal-tingley-zocdoc/optimizely-sdk.git",
-    :tag => s.version.to_s
+    :tag => "eventDispatcher-"+s.version.to_s
   }
   s.source_files            = "OptimizelySDKEventDispatcher/OptimizelySDKEventDispatcher/*.{h,m}"
   s.public_header_files     = "OptimizelySDKEventDispatcher/OptimizelySDKEventDispatcher/*.h"

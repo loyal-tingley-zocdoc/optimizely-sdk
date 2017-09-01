@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target   = "8.0"
   s.source                  = {
     :git => "https://github.com/loyal-tingley-zocdoc/optimizely-sdk.git",
-    :tag => s.version.to_s
+    :tag => "iOS-"+s.version.to_s
   }
   s.source_files            = "OptimizelySDKiOS/OptimizelySDKiOS/*.{h,m}"
   s.public_header_files     = "OptimizelySDKiOS/OptimizelySDKiOS/*.h"
